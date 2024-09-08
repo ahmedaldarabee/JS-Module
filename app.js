@@ -2,7 +2,6 @@
             // creating module:
             const doDoApp = (
                 function(){
-                    // private section:
                     let todo = [];
                     function addItem(item){
                         todo.push(item);
@@ -12,7 +11,6 @@
                     }
 
                     function deleteItem(item){
-                        // based on condition
                         todo = todo.filter((ele) => ele != item);
                         showInfo();
                     }
@@ -30,7 +28,6 @@
                     }
 
                     return {
-                        // Var : method
                         addItem: addItem,
                         deleteItem: deleteItem,
                         showData : showInfo,
