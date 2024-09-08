@@ -4,7 +4,6 @@
                 function(){
                     // private section:
                     let todo = [];
-
                     function addItem(item){
                         todo.push(item);
                         convertingLowerCase();
