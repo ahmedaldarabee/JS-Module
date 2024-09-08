@@ -90,8 +90,3 @@
                 }
             })(myData,myCalculator);
         })();
-
-        myData.addFirstName("Ahmed");
-        myData.addLastName("Al Darabee");
-
-        console.log(composing.getData())
