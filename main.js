@@ -1,5 +1,4 @@
-        (function (){
-            
+(function (){            
             // creating module:
             const doDoApp = (
                 function(){
