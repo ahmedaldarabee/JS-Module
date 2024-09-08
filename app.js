@@ -43,8 +43,3 @@
             if(!window.doDoApp) window.toDoAPI = doDoApp;
 
         });
-
-        // When you added () in the last of code , this way be as
-        // enabling the function to work.
-
-        // (function showData(){console.log("Hello Ahmed");})()
