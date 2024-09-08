@@ -1,6 +1,5 @@
         (function (){
-            // Used To Separating both registration and creation
-
+            
             // creating module:
             const doDoApp = (
                 function(){
