@@ -52,7 +52,6 @@
                     state.lName = name;
                 }
 
-                // as a example on the function that call another function
                 function showName(){
                    return fullName();
                 }
@@ -72,8 +71,7 @@
                 }
 
             })()
-        
-            // composing two modules
+
             let composing = (function(){                
                 function getAllData(){
                     return myData.FullName() + ' is owner to this result:  ' + myCalculator.sum(10,20);
