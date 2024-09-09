@@ -88,3 +88,66 @@
                 }
             })(myData,myCalculator);
         })();
+
+
+(function(){
+                let userData = (function() {
+                        const user = {
+                            name  : '',
+                            age   : 0,
+                            major : '',
+                            careerPath : '',
+                        }
+
+                        function setName(name){
+                            user.name = name;
+                        }
+
+                        function setAge(age){
+                            user.age = age;
+                        }
+
+                        // conditional if
+                        function showName(){
+                            return user.name != '' ? user.name : 'add your name correctly!';
+                        }
+
+                        function showAge(){
+                            return user.age != 0 ? user.age : 'add your age correctly!';
+                        }
+
+                        if(!window.userData){
+                            window.userData = {
+                                showName : showName,
+                                showAge  : showAge,
+                                setName  : setName,
+                                setAge   : setAge
+                            }
+                        }
+
+                        return {
+                            showName : showName,
+                            showAge  : showAge,
+                            setName  : setName,
+                            setAge   : setAge
+                        }
+                    }
+                )()
+            }
+        )()
+        
+        userData.setName('ahmed nayel al darabee');
+        userData.setAge(21);
+
+        console.log("Full name be as: " , userData.showName())
+        console.log("Your age be as: " , userData.showAge())
+        
+
+
+
+
+
+
+
+
+
